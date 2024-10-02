@@ -1,0 +1,3 @@
+@echo Starting merging...
+git merge upstream/dev/3.0.0
+pause
