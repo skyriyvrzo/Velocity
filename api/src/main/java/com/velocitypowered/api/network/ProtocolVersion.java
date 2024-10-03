@@ -107,9 +107,11 @@ public enum ProtocolVersion implements Ordered<ProtocolVersion> {
   /**
    * The user-friendly representation of the lowest and highest supported versions.
    */
-  public static final String SUPPORTED_VERSION_STRING = String
-      .format("%s-%s", MINIMUM_VERSION.getVersionIntroducedIn(),
-          MAXIMUM_VERSION.getMostRecentSupportedVersion());
+//  public static final String SUPPORTED_VERSION_STRING = String
+//      .format("%s-%s", MINIMUM_VERSION.getVersionIntroducedIn(),
+//          MAXIMUM_VERSION.getMostRecentSupportedVersion());
+  
+  public static final String SUPPORTED_VERSION_STRING = xyz.cuddlecloud.api.network.ProtocalVersion.SUPPORTED_VERSION_STRING;
 
   /**
    * A map linking the protocol version number to its {@link ProtocolVersion} representation.

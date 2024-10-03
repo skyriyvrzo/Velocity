@@ -2,14 +2,16 @@ package xyz.cuddlecloud.proxy;
 
 public final class VelocityServer {
 
+	public static final String VERSION = "2024.10.3.1";
+	
 	/**
-	 * {@link com.velocitypowered.proxy#getVersion}
+	 * {@link com.velocitypowered.proxy#getVersion()}
 	 */
-	public static final String IMPLNAME = "CuddleCloud Proxy (2024.10.3.1)";
+	public static final String IMPLNAME = String.format("CuddleCloud Proxy (%s)", VERSION);
 
 	
 	/**
-	 * {@link com.velocitypowered.proxy#getVersion}
+	 * {@link com.velocitypowered.proxy#getVersion()}
 	 */
 	public static final String IMPLVENDOR = "CuddleCloud Contributors";
 }
