@@ -192,17 +192,17 @@ public class VelocityServer implements ProxyServer, ForwardingAudience {
   @Override
   public ProxyVersion getVersion() {
     Package pkg = VelocityServer.class.getPackage();
-    String implName;
+    String implName = xyz.cuddlecloud.proxy.VelocityServer.IMPLNAME;
     String implVersion;
-    String implVendor;
+    String implVendor = xyz.cuddlecloud.proxy.VelocityServer.IMPLVENDOR;
     if (pkg != null) {
-      implName = MoreObjects.firstNonNull(pkg.getImplementationTitle(), "Velocity");
+//      implName = MoreObjects.firstNonNull(pkg.getImplementationTitle(), "Velocity");
       implVersion = MoreObjects.firstNonNull(pkg.getImplementationVersion(), "<unknown>");
-      implVendor = MoreObjects.firstNonNull(pkg.getImplementationVendor(), "Velocity Contributors");
+//      implVendor = MoreObjects.firstNonNull(pkg.getImplementationVendor(), "Velocity Contributors");
     } else {
-      implName = "Velocity";
+//      implName = "Velocity";
       implVersion = "<unknown>";
-      implVendor = "Velocity Contributors";
+//      implVendor = "Velocity Contributors";
     }
 
     return new ProxyVersion(implName, implVendor, implVersion);

@@ -144,7 +144,8 @@ public final class ServerPing {
    */
   public static final class Builder {
 
-    private Version version = new Version(0, "Unknown");
+//    private Version version = new Version(0, "Unknown");
+	  private Version version = xyz.cuddlecloud.api.proxy.server.ServerPing.VERSION;
     private int onlinePlayers;
     private int maximumPlayers;
     private final List<SamplePlayer> samplePlayers = new ArrayList<>();
