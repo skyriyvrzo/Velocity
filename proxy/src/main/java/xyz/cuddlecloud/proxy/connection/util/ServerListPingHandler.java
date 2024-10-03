@@ -12,6 +12,6 @@ public final class ServerListPingHandler {
 	 * {@link com.velocitypowered.proxy.connection.util#constructLocalPing()}
 	 */
 	public static final Get_a769db2b<ServerPing.Version, ProtocolVersion> VERSION = (version) -> {
-		return new ServerPing.Version(version.getProtocol(), String.format("CuddleCloud (%s)", VelocityServer.VERSION));
+		return new ServerPing.Version(version.getProtocol(), String.format("CuddleCloud %s (%s)", ProtocolVersion.SUPPORTED_VERSION_STRING ,VelocityServer.VERSION));
 	};
 }
