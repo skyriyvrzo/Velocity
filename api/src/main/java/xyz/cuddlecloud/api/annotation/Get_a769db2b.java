@@ -1,4 +1,4 @@
-package xyz.cuddlecloud.proxy.annotation;
+package xyz.cuddlecloud.api.annotation;
 
 /**
  * Represents a supplier of results.
